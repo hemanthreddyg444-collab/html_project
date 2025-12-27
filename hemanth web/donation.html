@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Donation - Annapoorna Seva</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+
+  <main>
+    <section class="section" id="donate">
+      <h2>Donation Form</h2>
+      <p class="centered">Share your surplus food or sponsor meals.</p>
+      <div class="form-container">
+        <h3>Donate Food / Amount</h3>
+        <form id="donationForm">
+          <label for="dname">Name</label>
+          <input type="text" id="dname" name="name" placeholder="Your full name" required>
+
+          <label for="demail">Email</label>
+          <input type="email" id="demail" name="email" placeholder="your@email.com" required>
+
+          <label for="dphone">Phone</label>
+          <input type="tel" id="dphone" name="phone" placeholder="10-digit number" pattern="[0-9]{10}" required>
+
+          <label for="ddate">Preferred Date</label>
+          <input type="date" id="ddate" name="date" required>
+
+          <label for="damount">Amount (₹)</label>
+          <input type="number" id="damount" name="amount" placeholder="500" min="100" step="50" required>
+
+          <label for="dreq">Special Request (optional)</label>
+          <input type="text" id="dreq" name="requestText" placeholder="Any specific instructions">
+
+          <button type="submit" class="btn-pill full-width">DONATE NOW</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+
+</body>
+</html>

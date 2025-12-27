@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login / Signup - Annapoorna Seva</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+
+  <!-- Navbar -->
+
+  <main>
+    <section class="section" id="login">
+      <h2>Login / Signup</h2>
+      
+      <p class="centered">Manage your donations and messages.</p>
+      <div class="auth-box">
+        <div class="auth-left">
+          <h3 id="authLeftTitle">Welcome Back!</h3>
+          <p id="authLeftText">
+            To keep connected with Annapoorna Seva, please login with your personal info.
+          </p>
+          <button class="btn-pill auth-toggle" onclick="toggleAuthMode()">
+            Switch to Sign Up
+            <form action="index.html">
+          </button>
+        </div>
+        <div class="auth-right">
+          <h3 id="authRightTitle">Sign In</h3>
+          <p id="authRightText">Enter your email and password.</p>
+          <div class="social-login">
+            <button type="button" onclick="socialLogin('Google')">Google</button>
+            <button type="button" onclick="socialLogin('Facebook')">Facebook</button>
+          </div>
+          <form id="authForm">
+            <label for="aemail">Email</label>
+            <input type="email" id="aemail" required>
+
+            <label for="apass">Password</label>
+            <input type="password" id="apass" required minlength="6">
+
+            <label for="arole" id="roleLabel" style="display:none;margin-top:5px;">Role</label>
+            <select id="arole" style="display:none;">
+              <option value="donor">Donor</option>
+              <option value="volunteer">Volunteer</option>
+              <option value="admin">Admin</option>
+            </select>
+
+            <button type="submit" class="btn-pill full-width" id="authBtn" >Sign In</button>
+          </form>
+          <div class="success-box" id="authSuccess">
+            👤 Logged in as <span id="authUser"></span> (<span id="authRole"></span>)
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+
+</body>
+</html>
